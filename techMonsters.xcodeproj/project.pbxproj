@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D75D77012CD8E063007C3E31 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D75D77002CD8E05F007C3E31 /* .gitignore */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D75D76E42CD8CC0E007C3E31 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +31,7 @@
 		D75D76D32CD8CC0D007C3E31 /* techMonsters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = techMonsters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D75D76E32CD8CC0E007C3E31 /* techMonstersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = techMonstersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D75D76ED2CD8CC0E007C3E31 /* techMonstersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = techMonstersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D75D77002CD8E05F007C3E31 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -75,6 +80,7 @@
 		D75D76CA2CD8CC0D007C3E31 = {
 			isa = PBXGroup;
 			children = (
+				D75D77002CD8E05F007C3E31 /* .gitignore */,
 				D75D76D52CD8CC0D007C3E31 /* techMonsters */,
 				D75D76E62CD8CC0E007C3E31 /* techMonstersTests */,
 				D75D76F02CD8CC0E007C3E31 /* techMonstersUITests */,
@@ -212,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D75D77012CD8E063007C3E31 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

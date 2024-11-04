@@ -9,13 +9,34 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        TeamList()
+            .background(Color(.systemGray6))
+    }
+}
+
+struct TeamList: View {
+    let members = [
+        "Julio",
+        "Ala",
+        "Saghar",
+        "Fereshteh",
+        "Hadis",
+        "Dilyorbek"
+    ]
+    
+    var body: some View {
+        VStack(alignment: .leading, spacing: 10) {
+            Text("Team Members")
+                .font(.title)
+                .padding(.top)
+                .padding(.leading)
+            
+            List {
+                ForEach(members, id: \.self) { member in
+                    Text(member)
+                }
+            }
         }
-        .padding()
     }
 }
 
