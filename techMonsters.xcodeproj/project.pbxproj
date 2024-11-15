@@ -6,10 +6,6 @@
 	objectVersion = 77;
 	objects = {
 
-/* Begin PBXBuildFile section */
-		D75D77012CD8E063007C3E31 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = D75D77002CD8E05F007C3E31 /* .gitignore */; };
-/* End PBXBuildFile section */
-
 /* Begin PBXContainerItemProxy section */
 		D75D76E42CD8CC0E007C3E31 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -31,13 +27,22 @@
 		D75D76D32CD8CC0D007C3E31 /* techMonsters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = techMonsters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D75D76E32CD8CC0E007C3E31 /* techMonstersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = techMonstersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D75D76ED2CD8CC0E007C3E31 /* techMonstersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = techMonstersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D75D77002CD8E05F007C3E31 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		D75D76D52CD8CC0D007C3E31 /* techMonsters */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = techMonsters;
+			sourceTree = "<group>";
+		};
+		D75D76E62CD8CC0E007C3E31 /* techMonstersTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = techMonstersTests;
+			sourceTree = "<group>";
+		};
+		D75D76F02CD8CC0E007C3E31 /* techMonstersUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = techMonstersUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -70,8 +75,9 @@
 		D75D76CA2CD8CC0D007C3E31 = {
 			isa = PBXGroup;
 			children = (
-				D75D77002CD8E05F007C3E31 /* .gitignore */,
 				D75D76D52CD8CC0D007C3E31 /* techMonsters */,
+				D75D76E62CD8CC0E007C3E31 /* techMonstersTests */,
+				D75D76F02CD8CC0E007C3E31 /* techMonstersUITests */,
 				D75D76D42CD8CC0D007C3E31 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -124,6 +130,9 @@
 			dependencies = (
 				D75D76E52CD8CC0E007C3E31 /* PBXTargetDependency */,
 			);
+			fileSystemSynchronizedGroups = (
+				D75D76E62CD8CC0E007C3E31 /* techMonstersTests */,
+			);
 			name = techMonstersTests;
 			packageProductDependencies = (
 			);
@@ -143,6 +152,9 @@
 			);
 			dependencies = (
 				D75D76EF2CD8CC0E007C3E31 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D75D76F02CD8CC0E007C3E31 /* techMonstersUITests */,
 			);
 			name = techMonstersUITests;
 			packageProductDependencies = (
@@ -200,7 +212,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D75D77012CD8E063007C3E31 /* .gitignore in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,7 +396,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"techMonsters/Preview Content\"";
-				DEVELOPMENT_TEAM = 28ZHD7NHBJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -414,7 +424,6 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"techMonsters/Preview Content\"";
-				DEVELOPMENT_TEAM = 28ZHD7NHBJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
