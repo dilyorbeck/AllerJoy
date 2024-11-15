@@ -1,3 +1,10 @@
+//
+//  Data.swift
+//  Allerjoy
+//
+//  Created by Dilyorbek Sharofiddinov on 04/11/24.
+//
+
 import Foundation
 
 let foodItems = [

@@ -1,6 +1,6 @@
 //
-//  techMonstersApp.swift
-//  techMonsters
+//  Allerjoy.swift
+//  Allerjoy
 //
 //  Created by Dilyorbek Sharofiddinov on 04/11/24.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct techMonstersApp: App {
+struct AllerjoyApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

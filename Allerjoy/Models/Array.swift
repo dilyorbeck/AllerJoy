@@ -1,6 +1,6 @@
 //
 //  Array.swift
-//  techMonsters
+//  Allerjoy
 //
 //  Created by Dilyorbek Sharofiddinov on 12/11/24.
 //
