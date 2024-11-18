@@ -30,5 +30,6 @@ struct AlternativeProducts: Identifiable {
     let id = UUID()
     let option: String
     let option2: String
-    let quantity: String 
+    let quantity: String
+    
 }
