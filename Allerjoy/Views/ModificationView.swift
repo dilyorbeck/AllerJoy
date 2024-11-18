@@ -23,6 +23,8 @@ struct ModificationView: View {
                 Text("Options:")
                     .font(.largeTitle)
                 
+            
+                
                 ForEach(alternatives) { alternative in
                     VStack(alignment: .leading) {
                         Text("\(alternative.option) - \(alternative.quantity)")
