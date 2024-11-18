@@ -45,6 +45,7 @@ struct IngredientsView: View {
                         }
                     }
                     
+                    
                     Text("Recipe")
                         .font(.title)
                         .frame(maxWidth: .infinity, alignment: .leading)
