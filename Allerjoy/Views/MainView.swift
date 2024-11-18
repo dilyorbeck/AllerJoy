@@ -16,9 +16,9 @@ struct MainView: View {
             return foodItems.filter { $0.name.localizedCaseInsensitiveContains(searchText) }
         }
     }
-
+    
     var body: some View {
-        NavigationStack {
+        VStack{
             ScrollView {
                 let rows = filteredFoodItems.chunked(into: 2)
                 
@@ -34,15 +34,14 @@ struct MainView: View {
                                 }
                             }
                         }
-                        .padding(.vertical, 5)
+                        .padding(8)
                         Spacer()
                     }
                 }
-                .padding(.horizontal, 30)
+                .padding(.leading, 20)
             }
-            .searchable(text: $searchText, prompt: "Recipe title")
-            
         }
+        .searchable(text: $searchText, prompt: "Recipe title")
     }
 }
 
