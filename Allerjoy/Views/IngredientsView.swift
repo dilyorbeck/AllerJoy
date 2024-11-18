@@ -63,9 +63,8 @@ struct IngredientsView: View {
     IngredientsView(food: FoodItem(
         name: "Uzbek Plov",
         description: "Uzbek Plov is a traditional Uzbek dish that is made with a variety of ingredients.",
-        imageName: "uzbek-plov", imageFW: "uzbek-plov-fw",
-        rating: 5,
-        numberOfIngredients: 8,
+        imageName: "uzbek-plov",
+        imageFW: "uzbek-plov-fw",
         ingredients: [
             FoodIngredient(name: "Rice", quantity: "2 cups (400g)", alternatives: [
                 AlternativeProducts(option: "Brown Rice", option2: "Wild Rice", quantity: "2 cups (400g)")

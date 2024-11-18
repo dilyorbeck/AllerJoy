@@ -13,8 +13,6 @@ struct FoodItem: Identifiable {
     let description: String
     let imageName: String
     let imageFW: String
-    let rating: Int
-    let numberOfIngredients: Int
     let ingredients: [FoodIngredient]
     let recipes: String
 }
