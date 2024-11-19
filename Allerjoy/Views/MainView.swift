@@ -30,7 +30,7 @@ struct MainView: View {
                                 VStack {
                                     Image(food.imageName)
                                     Text(food.name)
-                                        .font(.system(size: 20))
+                                        .font(.system(size: 15))
                                         .fontWeight(.semibold)
                                         .foregroundColor(Color(hex: "#1D6E66"))
                                 }
