@@ -16,13 +16,22 @@ struct IngredientsView: View {
                     Image(food.imageFW)
                     
                     VStack(alignment: .leading){
+                        Text(food.name)
+                            .font(.system(size: 34))
+                            .foregroundStyle(Color(hex: "#1D6E66"))
+                            .bold()
+                            .padding(.bottom, 3)
+                        
+                        (Text("Servings: ").bold() + Text("4"))
+                            .padding(.bottom, 3)
+                        
+                        (Text("Time: ").bold() + Text("30 min"))
+                            .padding(.bottom, 3)
+                        
                         Text("Ingredients")
-                            .font(.largeTitle)
-                            .foregroundStyle(.green)
-                        
-                        Text("Servings: 10")
-                        
-                        Text("Time: 30 min")
+                            .font(.system(size: 34))
+                            .foregroundStyle(Color(hex: "#1D6E66"))
+                            .padding(.top, 25)
                         
                     }.frame(maxWidth: .infinity, alignment: .leading)
                         .font(.title)
@@ -32,27 +41,39 @@ struct IngredientsView: View {
                             NavigationLink(destination: ModificationView(ingredient: ingredient)) {
                                 HStack{
                                     Text(ingredient.name)
-                                        .font(.title2)
+                                        .font(.system(size: 17))
                                     Text(ingredient.quantity)
-                                        .font(.title3)
+                                        .font(.system(size: 17))
                                 }
                                 .foregroundStyle(.black)
                                 .padding(.vertical, 5)
                                 Spacer()
-                                Image(systemName: "arrow.right")
+                                Image(systemName: "chevron.right")
                                     .foregroundStyle(.black)
+                                    .font(.system(size: 25))
                             }
                         }
-                    }
+                    }.padding(.trailing, 50)
                     
                     
                     Text("Recipe")
-                        .font(.title)
+                        .font(.system(size: 34))
+                        .foregroundStyle(Color(hex: "#1D6E66"))
                         .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.top, 25)
                     
                     Text(food.recipes)
-                        .font(.title3)
+                        .font(.system(size: 17))
                         .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding()
+                        .background(
+                            RoundedRectangle(cornerRadius: 10)
+                                .fill(Color.white)
+                                .stroke(Color(hex: "#979797"), lineWidth: 1)
+                                .shadow(radius: 3, x: 4, y: 4)
+                            )
+                        .padding(.trailing, 50)
+                    
                 }
             }
         }
