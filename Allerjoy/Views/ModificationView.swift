@@ -112,7 +112,6 @@ struct ModificationView: View {
         .padding()
         .toolbar {
             Button("Save") {
-                // Update the ingredient with the selected option
                 if selectedIndex == 1, let alternatives = ingredient.alternatives, !alternatives.isEmpty {
                     ingredient.name = alternatives[0].option
                     ingredient.quantity = alternatives[0].quantity
