@@ -16,12 +16,12 @@ struct WelcomeView: View {
                     .ignoresSafeArea()
                 
                 VStack {
-                    Text("Welcom")
+                    Text("Welcome")
                         .font(.system(size: 48))
                         .foregroundColor(Color(hex: "#1D6E66"))
                         .fontWeight(.bold)
                     
-                    Text("Allerjoy")
+                    Text("AllerJoy")
                         .font(.largeTitle)
                         .foregroundColor(Color(hex: "#1D6E66"))
                         .fontWeight(.bold)
