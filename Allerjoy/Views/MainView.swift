@@ -30,16 +30,17 @@ struct MainView: View {
                                 VStack {
                                     Image(food.imageName)
                                     Text(food.name)
-                                        .foregroundStyle(.black)
+                                        .font(.system(size: 20))
+                                        .fontWeight(.semibold)
+                                        .foregroundColor(Color(hex: "#1D6E66"))
                                 }
                             }
                         }
-                        .padding(8)
                         Spacer()
                     }
                 }
-                .padding(.leading, 20)
             }
+            .padding(.leading, 10)
         }
         .searchable(text: $searchText, prompt: "Recipe title")
     }

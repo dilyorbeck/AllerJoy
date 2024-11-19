@@ -16,7 +16,7 @@ struct WelcomeView: View {
                     .ignoresSafeArea()
                 
                 VStack {
-                    Text("Welcome")
+                    Text("Welcom")
                         .font(.system(size: 48))
                         .foregroundColor(Color(hex: "#1D6E66"))
                         .fontWeight(.bold)
@@ -33,6 +33,7 @@ struct WelcomeView: View {
                     VStack(alignment: .leading) {
                         Label("Personalize allergen-free meals!", systemImage: "carrot")
                         Label("Save your safe dishes!", systemImage: "star")
+                            .padding(.top, 1)
                     }
                     .foregroundColor(Color(hex: "#1D6E66"))
                     .padding(.top, 50)

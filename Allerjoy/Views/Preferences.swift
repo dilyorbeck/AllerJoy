@@ -10,14 +10,23 @@ import SwiftUI
 struct Preferences: View {
     @State private var searchText = ""
     @State private var selectedAllergen: String? = nil
-    @State private var navigateToMainView = false // State to handle navigation
+    @State private var navigateToMainView = false
+    
+    // Updated the filteredAllergensItems logic
+    var filteredAllergens: [String] {
+        if searchText.isEmpty {
+            return allergens
+        } else {
+            return allergens.filter { $0.localizedCaseInsensitiveContains(searchText) }
+        }
+    }
     
     let allergens = [
-        "Onion", "Zuccini", "Garlic", "Tomato", "Eggplant", "Egg",
-        "Potato", "Rabish", "Alcohol", "Pork", "Chicken", "Beef",
-        "Parmesan", "Fetta", "Motrazella", "Peanut", "Milk", "Strawberry",
+        "Onion", "Zucchini", "Garlic", "Tomato", "Eggplant", "Egg",
+        "Potato", "Radish", "Alcohol", "Pork", "Chicken", "Beef",
+        "Parmesan", "Feta", "Mozzarella", "Peanut", "Milk", "Strawberry",
         "Gluten", "Soy", "Grapes", "Kiwi", "Turkey", "Avocado", "Rice",
-        "Corn", "Fish", "Mango", "Mashroom", "Honey", "Shellfish",
+        "Corn", "Fish", "Mango", "Mushroom", "Honey", "Shellfish",
         "Pineapple", "Cinnamon", "Wheat", "Vanilla", "Ginger", "Coconut", "Peppers", "Other"
     ]
     
@@ -28,9 +37,9 @@ struct Preferences: View {
     ]
     
     var body: some View {
-        VStack {
+        ScrollView {
             LazyVGrid(columns: columns, spacing: 12) {
-                ForEach(allergens, id: \.self) { allergen in
+                ForEach(filteredAllergens, id: \.self) { allergen in
                     Button(action: {
                         selectedAllergen = (selectedAllergen == allergen) ? nil : allergen
                     }) {
@@ -48,7 +57,8 @@ struct Preferences: View {
             }
             .padding()
             
-            // NavigationLink to MainView
+            .padding(.top, -10)
+            
             NavigationLink(destination: MainView(), isActive: $navigateToMainView) {
                 EmptyView()
             }
@@ -66,7 +76,6 @@ struct Preferences: View {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button("Save") {
                     print("Selected Allergen: \(selectedAllergen ?? "None")")
-                    
                     navigateToMainView = true
                 }
                 .foregroundColor(Color(hex: "#1D6E66"))

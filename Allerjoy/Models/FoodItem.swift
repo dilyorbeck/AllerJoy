@@ -13,21 +13,21 @@ struct FoodItem: Identifiable {
     let description: String
     let imageName: String
     let imageFW: String
-    let ingredients: [FoodIngredient]
+    var ingredients: [FoodIngredient]
     let recipes: String
 }
 
 struct FoodIngredient: Identifiable {
     let id = UUID()
-    let name: String
-    let quantity: String
+    var name: String
+    var quantity: String
     var alternatives: [AlternativeProducts]?
 }
 
 struct AlternativeProducts: Identifiable {
     let id = UUID()
-    let option: String
-    let option2: String
+    var option: String
+    var option2: String
     let quantity: String
     
 }

@@ -1,15 +1,14 @@
-//  MainView.swift
-//  Allerjoy
-//
-//  Created by Dilyorbek Sharofiddinov on 04/11/24.
-//
-
 import SwiftUI
 
 struct IngredientsView: View {
-    let food: FoodItem
+    @State private var food: FoodItem 
+    
+    init(food: FoodItem) {
+        _food = State(initialValue: food)
+    }
     
     var body: some View {
+<<<<<<< Updated upstream
         ScrollView {
             LazyVStack(alignment: .leading, spacing: 10) {
                 VStack {
@@ -74,6 +73,55 @@ struct IngredientsView: View {
                             )
                         .padding(.trailing, 50)
                     
+=======
+        NavigationView {
+            ScrollView {
+                LazyVStack(alignment: .leading, spacing: 10) {
+                    VStack {
+                        Image(food.imageFW)
+                        
+                        VStack(alignment: .leading) {
+                            Text("Ingredients")
+                                .font(.largeTitle)
+                                .foregroundStyle(.green)
+                            
+                            Text("Servings: 10")
+                            Text("Time: 30 min")
+                        }
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .font(.title)
+                        
+                        LazyVStack(alignment: .leading, spacing: 10) {
+                            ForEach(food.ingredients.indices, id: \.self) { index in
+                                NavigationLink(
+                                    destination: ModificationView(
+                                        ingredient: $food.ingredients[index]
+                                    )
+                                ) {
+                                    HStack {
+                                        Text(food.ingredients[index].name)
+                                            .font(.title2)
+                                        Text(food.ingredients[index].quantity)
+                                            .font(.title3)
+                                    }
+                                    .foregroundStyle(.black)
+                                    .padding(.vertical, 5)
+                                    Spacer()
+                                    Image(systemName: "arrow.right")
+                                        .foregroundStyle(.black)
+                                }
+                            }
+                        }
+                        
+                        Text("Recipe")
+                            .font(.title)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                        
+                        Text(food.recipes)
+                            .font(.title3)
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                    }
+>>>>>>> Stashed changes
                 }
             }
         }
@@ -92,27 +140,8 @@ struct IngredientsView: View {
             ]),
             FoodIngredient(name: "Lamb or Beef", quantity: "500g", alternatives: [
                 AlternativeProducts(option: "Chicken", option2: "Tofu", quantity: "500g")
-            ]),
-            FoodIngredient(name: "Carrots", quantity: "2 large (300g)", alternatives: [
-                AlternativeProducts(option: "Bell peppers", option2: "Sweet potatoes", quantity: "2 large (300g)")
-            ]),
-            FoodIngredient(name: "Onions", quantity: "2 medium (200g)", alternatives: [
-                AlternativeProducts(option: "Leeks", option2: "Green onions", quantity: "2 medium (200g)")
-            ]),
-            FoodIngredient(name: "Garlic", quantity: "1 head", alternatives: [
-                AlternativeProducts(option: "Ginger", option2: "Shallots", quantity: "1 head")
-            ]),
-            FoodIngredient(name: "Vegetable oil", quantity: "3-4 tablespoons", alternatives: [
-                AlternativeProducts(option: "Olive oil", option2: "Coconut oil", quantity: "3-4 tablespoons")
-            ]),
-            FoodIngredient(name: "Salt", quantity: "1 tablespoon", alternatives: [
-                AlternativeProducts(option: "Sea salt", option2: "Himalayan salt", quantity: "1 tablespoon")
-            ]),
-            FoodIngredient(name: "Black pepper", quantity: "1/2 teaspoon", alternatives: [
-                AlternativeProducts(option: "White pepper", option2: "Paprika", quantity: "1/2 teaspoon")
             ])
         ],
-        
         recipes: "How it's made"
     ))
 }
