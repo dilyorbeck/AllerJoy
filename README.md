@@ -1,13 +1,12 @@
+<img width="1124" alt="Screenshot 2024-11-19 at 13 13 12" src="https://github.com/user-attachments/assets/5feba8f2-76ce-42b8-a4bb-9ef17e689e3d">
 
-<img width="1007" alt="Screenshot 2024-11-19 at 12 27 52" src="https://github.com/user-attachments/assets/8689fc80-c1af-483d-99b1-c5fe174f6a69">
-
-Allerjoy App - README
+AllerJoy App - README
 
 About
 
-Allerjoy is a simple app that helps users track allergens and log symptoms to monitor allergic reactions over time.
+AllerJoy is a simple app that helps users track allergens and log symptoms to monitor allergic reactions over time.
 
-Enjoy using Allerjoy!
+Enjoy using AllerJoy!
 
 
 
