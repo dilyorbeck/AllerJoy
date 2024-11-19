@@ -1,5 +1,5 @@
 //  MainView.swift
-//  Allerjoy
+//  AllerJoy
 //
 //  Created by Dilyorbek Sharofiddinov on 04/11/24.
 //

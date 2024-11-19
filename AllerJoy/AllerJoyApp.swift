@@ -1,6 +1,6 @@
 //
-//  Allerjoy.swift
-//  Allerjoy
+//  AllerJoy.swift
+//  AllerJoy
 //
 //  Created by Dilyorbek Sharofiddinov on 04/11/24.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct AllerjoyApp: App {
+struct AllerJoyApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

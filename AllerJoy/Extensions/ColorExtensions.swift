@@ -1,6 +1,6 @@
 //
 //  ColorExtensions.swift
-//  Allerjoy
+//  AllerJoy
 //
 //  Created by Julio Enrique Sanchez Guajardo on 18/11/24.
 //

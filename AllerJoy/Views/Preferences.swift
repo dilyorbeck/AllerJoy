@@ -1,6 +1,6 @@
 //
 //  Preferences.swift
-//  Allerjoy
+//  AllerJoy
 //
 //  Created by Dilyorbek Sharofiddinov on 18/11/24.
 //

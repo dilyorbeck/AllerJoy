@@ -1,6 +1,6 @@
 //
 //  FoodItem.swift
-//  Allerjoy
+//  AllerJoy
 //
 //  Created by Dilyorbek Sharofiddinov on 12/11/24.
 //
