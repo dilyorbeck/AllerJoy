@@ -1,5 +1,4 @@
-
-<img width="1007" alt="Screenshot 2024-11-19 at 12 27 52" src="https://github.com/user-attachments/assets/8689fc80-c1af-483d-99b1-c5fe174f6a69">
+<img width="1124" alt="Screenshot 2024-11-19 at 13 13 12" src="https://github.com/user-attachments/assets/5feba8f2-76ce-42b8-a4bb-9ef17e689e3d">
 
 AllerJoy App - README
 
